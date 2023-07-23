@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* headerSection */
+.headerSection {
+    background-image: url(./photo-1471879832106-c7ab9e0cee23.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 227px 0;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+}
+.menu {
+    position: relative;
+    top: -183px;
+    left: -27px;
+}
+
+
+.menu .logoImg {
+    top: -8px;
+    position: absolute;
+    left: 164px;
+    /* font-size: 13px; */
+}
+.heroText h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-style: italic;
+    font-size: 37px;
+    margin: 197px;
+}
+.heroText h2::before {
+    content: "\f10d";
+    color: red;
+    position: absolute;
+    top: -15px;
+    left: 33px;
+    font: var(--fa-font-solid);
+}
+
+.heroText h2::after {
+    content: "\f10e";
+    color: red;
+    position: absolute;
+    top: -15px;
+    right: 36px;
+    font: var(--fa-font-solid);
+}
+.menu ul {
+    text-align: right;
+    
+}
+.menu ul li {
+    display: inline-block;
+    
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 13px;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    color: brown;
+}
+/* aboutSection */
+.aboutSection {
+    background: white;
+    position: relative;
+    padding: 39px 0px;
+}
+
+.aboutSection h1 {
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+}
+.photo {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 103px;
+    left: 212px;
+    box-shadow: 1px 1px 10px black;
+    border: 1px solid red;
+}
+.photo img {
+    margin-top: 0px;
+}
+.about p {
+    text-align: left;
+    margin-left: 423px;
+    
+}
+/* serviceSection */
+.serviceSection {
+    background: #2e3e4e;
+    padding: 93px 10px;
+}
+.serviceItem {
+    width: 250px;
+    margin: 0 30px;
+    display: inline-block;
+    color: white;
+}
+.service {
+    text-align: center;
+    color: #ef664d;
+}
+.service h2 {
+    padding: -5px;
+    margin-bottom: 83px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 300;
+}
+.serviceItem ul li {
+    list-style: none;
+    line-height: 2;
+    font-size: 18px;
+
+}
+.serviceItem ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    color: #ef664d;
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.service i {
+    background: #ef664d;
+    padding: 15px;
+    margin: 13px;
+    border-radius: 5px 26px 5px 26px;
+    width: 10%;
+    height: 10%;
+    font-size: 21px;
+}
+.serviceItem h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20px;
+    padding: 15px;
+}
+.serviceItem a:hover {
+    color: black;
+}
+.btn {
+    background: #f26c4f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.btn::before{
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    transition: .5s;
+
+
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn1::before{
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn2::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+}
+.btn:hover::before{
+    height: 100%;
+}
+.btn3::before{
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%
+}
+.btn:hover::before{
+    width: 100%;
+}
+/* contactSection */
+.contactSection{
+    text-align: center;
+    padding: 50px 0;
+}
+.contact{
+    width: 400px;
+    margin: auto;
+}
+.name {
+    padding: 12px 12px;
+    border: none;
+    border-bottom: 1px solid red;
+    width: 80%;
+    outline: none;
+}
+.contact button {
+    padding: 10px 84px;
+    margin: 32px;
+    border: none;
+    background: #4f1a0e;
+    font-size: 23px;
+    color: white;
+}
+/* footerSection */
+.footer{
+    background-color: #2e3e4e;
+    padding: 30px 0px;
+    text-align: center;
+}
+.footer p{
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 5px;
+}
+.footer p span{
+    color: #ef664d;
+}
